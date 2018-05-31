@@ -102,7 +102,10 @@ if __name__ == '__main__':
     for i in range(n):
         print i**2
 
-""" We add a Leap Day on February 29, almost every four years. The leap day is an extra, or intercalary day and we add it to the shortest month of the year, February. 
+""" 
+Write a function
+
+We add a Leap Day on February 29, almost every four years. The leap day is an extra, or intercalary day and we add it to the shortest month of the year, February. 
 In the Gregorian calendar three criteria must be taken into account to identify leap years:
 
 The year can be evenly divided by 4, is a leap year, unless:
@@ -138,7 +141,10 @@ def is_leap(year):
 
     return leap
 
-""" Read an integer N.
+""" 
+
+
+Read an integer N.
 
 Without using any string methods, try to print the following:
 
