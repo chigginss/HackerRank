@@ -30,5 +30,13 @@ def split_and_join(line):
     new_line = line.split(" ")
     return "-".join(new_line)
 
+"""Read a given string, change the character at a given index and then print the modified string."""
+
+def mutate_string(string, position, character):
+    
+    l = list(string)
+    l[position] = character
+    str = "".join(l)
+    return str
 
 
