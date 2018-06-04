@@ -1,4 +1,4 @@
-#String Challenges
+"""String Challenges"""
 
 """
 You are given a string and your task is to swap cases. In other words, convert all lowercase letters to uppercase letters and vice versa.
@@ -24,4 +24,11 @@ Hello firstname lastname! You just delved into python."""
 def print_full_name(a, b):
     print "Hello {} {}! You just delved into python.".format(a, b)
 
-    
+""" You are given a string. Split the string on a " " (space) delimiter and join using a - hyphen. """
+
+def split_and_join(line):
+    new_line = line.split(" ")
+    return "-".join(new_line)
+
+
+
