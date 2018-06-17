@@ -65,6 +65,25 @@ for i in range(thickness+1):
 for i in range(thickness):
     print ((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6)
 
-"""  """
+""" You are asked to ensure that the first and last names of people begin with a capital letter in their passports. For example, alison heck should be capitalised correctly as Alison Heck.
+ """
+
+# Complete the solve function below.
+def solve(s):
+    str = s.split(" ")
+    new_s = []
+    
+    if str[0][0].isalpha():
+        new_s = str[0][0].upper() + str[0][1:].lower()
+    
+    if str[1][0].isalpha():
+        new_s = new_s + " " + str[1][0].upper() + str[1][1:].lower()
+    
+    result = "".join(new_s)
+    
+    # result = str(result)
+    
+    print result
+
 
 

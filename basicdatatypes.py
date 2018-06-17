@@ -18,3 +18,23 @@ if __name__ == '__main__':
     if query_name in student_marks:
         average = sum(student_marks[query_name]) / len(student_marks[query_name])
         print "%.2f" % average
+
+"""
+Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. 
+You are given scores. Store them in a list and find the score of the runner-up."""
+
+if __name__ == '__main__':
+    n = int(raw_input())
+    arr = map(int, raw_input().split())
+    
+    scores = arr
+    
+    first = max(scores)
+    i = 0
+    while i < n:
+        if first in scores:
+            scores.remove(first)
+        i += 1
+        
+    second = max(scores)
+    print second
