@@ -38,3 +38,17 @@ if __name__ == '__main__':
         
     second = max(scores)
     print second
+
+
+"""Given an integer, N, and N space-separated integers as input, create a tuple, T, of those N integers. Then compute and print the result of hash(T)."""
+
+
+if __name__ == '__main__':
+    n = int(raw_input())
+    input_list = [raw_input().split()]    
+    
+    for lst in input_list:
+        for i in xrange(n):
+            lst[i] = int(lst[i])
+        tup = tuple(lst)
+        print hash(tup)
