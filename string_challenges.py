@@ -85,5 +85,29 @@ def solve(s):
     
     print result
 
+"""You are given a string S and width w. 
+Your task is to wrap the string into a paragraph of width ."""
+
+def wrap(string, max_width):
+
+    new_str = ""
+    
+    for char in string:
+        new_str += char
+        if len(new_str) == max_width:
+            new_str += "\n"
+        elif len(new_str) == ((2*max_width) + 1):
+            new_str += "\n"
+        elif len(new_str) == ((3*max_width) + 2):
+            new_str += "\n"
+        elif len(new_str) == ((4*max_width) + 3):
+            new_str += "\n"
+        elif len(new_str) == ((5*max_width) + 4):
+            new_str += "\n"
+        elif len(new_str) == ((6*max_width) + 5):
+            new_str += "\n"
+            
+
+    return new_str
 
 
