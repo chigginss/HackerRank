@@ -39,4 +39,75 @@ def mutate_string(string, position, character):
     str = "".join(l)
     return str
 
+"""Text Alignment
+You are given a partial code that is used for generating the HackerRank Logo of variable thickness. """
+
+thickness = int(raw_input()) #This must be an odd number
+c = 'H'
+
+#Top Cone
+for i in range(thickness):
+    print (c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1)
+
+#Top Pillars
+for i in range(thickness+1):
+    print (c*thickness).center(thickness*2)+(c*thickness).center(thickness*6)
+
+#Middle Belt
+for i in range((thickness+1)/2):
+    print (c*thickness*5).center(thickness*6)    
+
+#Bottom Pillars
+for i in range(thickness+1):
+    print (c*thickness).center(thickness*2)+(c*thickness).center(thickness*6)    
+
+#Bottom Cone
+for i in range(thickness):
+    print ((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6)
+
+""" You are asked to ensure that the first and last names of people begin with a capital letter in their passports. For example, alison heck should be capitalised correctly as Alison Heck.
+ """
+
+# Not complete - needs revision
+def solve(s):
+    str = s.split(" ")
+    new_s = []
+    
+    if str[0][0].isalpha():
+        new_s = str[0][0].upper() + str[0][1:].lower()
+    
+    if str[1][0].isalpha():
+        new_s = new_s + " " + str[1][0].upper() + str[1][1:].lower()
+    
+    result = "".join(new_s)
+    
+    # result = str(result)
+    
+    print result
+
+"""You are given a string S and width w. 
+Your task is to wrap the string into a paragraph of width ."""
+
+def wrap(string, max_width):
+
+    new_str = ""
+    
+    for char in string:
+        new_str += char
+        if len(new_str) == max_width:
+            new_str += "\n"
+        elif len(new_str) == ((2*max_width) + 1):
+            new_str += "\n"
+        elif len(new_str) == ((3*max_width) + 2):
+            new_str += "\n"
+        elif len(new_str) == ((4*max_width) + 3):
+            new_str += "\n"
+        elif len(new_str) == ((5*max_width) + 4):
+            new_str += "\n"
+        elif len(new_str) == ((6*max_width) + 5):
+            new_str += "\n"
+            
+
+    return new_str
+
 
