@@ -40,7 +40,8 @@ if __name__ == '__main__':
     print second
 
 
-"""Given an integer, N, and N space-separated integers as input, create a tuple, T, of those N integers. Then compute and print the result of hash(T)."""
+"""Given an integer, N, and N space-separated integers as input, create a tuple, T, of those N integers. 
+Then compute and print the result of hash(T)."""
 
 
 if __name__ == '__main__':
