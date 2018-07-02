@@ -167,6 +167,7 @@ print(*range(1, input() + 1), sep="")
 if __name__ == '__main__':
     n = int(raw_input())
     
+<<<<<<< HEAD
 """ Make anagrams """
 
 def number_needed(a, b):
@@ -191,6 +192,8 @@ a = raw_input().strip()
 b = raw_input().strip()
 
 print number_needed(a, b)
+=======
+>>>>>>> b16335501ac0887db9145069ba0f35928e56a53f
 
 
 
